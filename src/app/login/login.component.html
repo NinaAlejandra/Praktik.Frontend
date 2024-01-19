@@ -1,0 +1,17 @@
+<div class="container">
+    <h2 class="text-center mb-4">Inloggning</h2>
+    <form (submit)="login()" class="mx-auto" style="max-width: 300px">
+      <div class="mb-3">
+        <label for="username" class="form-label">Användarnamn:</label>
+        <input type="text" id="username" name="username" [(ngModel)]="username" required class="form-control">
+      </div>
+  
+      <div class="mb-3">
+        <label for="password" class="form-label">Lösenord:</label>
+        <input type="password" id="password" name="password" [(ngModel)]="password" required class="form-control">
+      </div>
+  
+      <button type="submit" class="btn btn-primary">Logga in</button>
+    </form>
+  </div>
+  

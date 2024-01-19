@@ -1,0 +1,23 @@
+<div class="container mt-3">
+    <h2 class="d-flex justify-content-center">Lägg till ny bok</h2>
+    <form #bookForm="ngForm" (ngSubmit)="onSubmit(bookForm)">
+      <div class="mb-3">
+        <label for="title" class="form-label">Titel:</label>
+        <input type="text" name="title" [(ngModel)]="newBook.title" required class="form-control" placeholder="Titel">
+      </div>
+  
+      <div class="mb-3">
+        <label for="author" class="form-label">Författare:</label>
+        <input type="text" name="author" [(ngModel)]="newBook.author" required class="form-control" placeholder="Författare">
+      </div>
+  
+      <div class="mb-3">
+        <label for="publishedYear" class="form-label">Publiceringsår:</label>
+        <input type="text" name="publishedYear" [(ngModel)]="newBook.publishedYear" required pattern="\d{4}" class="form-control" placeholder="Publiceringsår">
+      </div>
+  
+      <button type="submit" class="btn btn-success">Lägg till bok</button>
+      <button (click)="goBack()" class="btn btn-secondary">Gå tillbaka</button>
+    </form>
+  </div>
+  

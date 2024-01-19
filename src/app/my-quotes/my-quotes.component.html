@@ -1,0 +1,11 @@
+<div *ngIf="authService.isAuthenticated()">
+  <div class="container mt-3">
+    <h2 class="d-flex justify-content-center">Mina citat</h2>
+    <ul>
+      <li class="mb-4" *ngFor="let quote of myQuotes">
+        {{ quote.text }}<br />
+        -{{ quote.author }}
+      </li>
+    </ul>
+  </div>
+</div>

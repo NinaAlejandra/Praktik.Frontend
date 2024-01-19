@@ -1,0 +1,29 @@
+<div *ngIf="authService.isAuthenticated()">
+  <div class="container mt-3">
+    <h2 class="d-flex justify-content-center">Lista över böcker</h2>
+    <button class="btn btn-success mb-2" (click)="onAddBook()">
+      Lägg till <i class="fas fa-plus"></i>
+    </button>
+    <ul class="list-group">
+      <li
+        *ngFor="let book of books"
+        class="list-group-item d-flex justify-content-between align-items-center"
+      >
+        <div>
+          {{ book.title }} - Författare: {{ book.author }} - Publiceringsår:
+          {{ book.publishedYear }}
+        </div>
+
+        <div class="d-flex justify-content-end">
+          <button class="btn btn-primary" (click)="onEditBook(book.id)">
+            <i class="fa fa-pencil"></i>
+          </button>
+          <button class="btn btn-danger" (click)="deleteBook(book.id)">
+            <i class="fa fa-trash"></i>
+          </button>
+        </div>
+      </li>
+    </ul>
+    <!-- <button class="btn btn-secondary mt-3" (click)="logout()">Logga ut</button> -->
+  </div>
+</div>

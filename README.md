@@ -1,27 +1,22 @@
 # PraktikFrontend
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.9.
+## Beskrivning
 
-## Development server
+Appen är en enkel webbapplikation för att hantera en lista över böcker. Den innehåller funktioner som att lägga till, redigera och ta bort böcker samt läsa citat.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Funktioner
 
-## Code scaffolding
+- **Lista över böcker:** Visa en lista över befintliga böcker.
+- **Lägga till bok:** Lägg till en ny bok till listan.
+- **Redigera bok:** Redigera information om en befintlig bok.
+- **Ta bort bok:** Ta bort en bok från listan.
+- **Användarautentisering:** Logga in och logga ut för att komma åt funktionerna.
+- **Citat:** Visa en lista över fem utvalda citat.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Teknologier
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Angular: Frontend-ramverk för webbapplikationen.
+- Bootstrap: Används för responsiv design och användargränssnitt.
+- .NET: Backend för att tillhandahålla API-tjänster.
+- Font Awesome: För ikoner och visuella element.
